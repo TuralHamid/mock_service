@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #343434;
+    overflow: hidden;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0 0 20px;
+    display: inline-block;
+    border: 1px solid #9C9C9C;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    border: #9C9C9C 3px solid;
+    background-color: #DFDFDF;
+}
+
+button {
+    background-color: #74AC1E;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #343434;
+}
+
+label {
+    color: #343434;
+}
+
+.divTop {
+    text-align: left;
+    margin: 24px 50px 12px;
+}
+
+#divForm {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+#divJsonTextArea {
+    height: 99%;
+    width: 69%;
+    display: none;
+    float: right;
+    margin: 0;
+    border: #9C9C9C 3px solid;
+    background-color: #DFDFDF;
+}
+
+#jsonTextArea{
+    height: 96%;
+    width: 99%;
+    resize: none;
+    overflow: auto;
+}
+
+#divServiceNameSelect, #divServiceNameInput {
+    display: none;
+    width: 100%;
+}
+
+#servicePathTitleLabel{
+    font-weight: bold;
+}
+
+#servicePathLabel:hover {
+    cursor: pointer;
+    color:#74AC1E;
+}
+
+#copyImage{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    cursor: pointer;
+    float: right;
+}

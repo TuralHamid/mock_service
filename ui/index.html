@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Response JSON Search</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="request.js" type="text/javascript"></script>
+</head>
+
+<body onload="onOperationSelected()">
+
+<div id="divForm">
+    <form>
+        <h1>Response JSON Search</h1>
+
+        <div class="divTop">
+            <hr/>
+
+            <div id="divOperationSelect">
+                <label for="operationSelect"><strong>Operation</strong></label>
+
+                <select id="operationSelect" name="operationSelect" onchange="onOperationSelected()">
+                    <option value="OPR_SELECT">Select</option>
+                    <option value="OPR_UPDATE">Update</option>
+                    <option value="OPR_INSERT">Add</option>
+                    <option value="OPR_DELETE">Delete</option>
+                </select>
+            </div>
+
+            <div id="divServiceNameSelect">
+                <label for="serviceNameSelect"><strong>Service Name</strong></label>
+
+                <select id="serviceNameSelect" name="serviceNameSelect" onchange="onServiceNameSelected()"></select>
+            </div>
+
+            <div id="divServiceNameInput">
+                <label for="serviceNameInput"><strong>Service Name</strong></label>
+
+                <input id="serviceNameInput" name="serviceNameInput" placeholder="Enter Service Name" required
+                       type="text">
+            </div>
+
+            <button id="searchButton" onclick="onRequest()" type="button">Select</button>
+        </div>
+    </form>
+</div>
+
+<div id="divJsonTextArea">
+    <label id="servicePathTitleLabel"></label>
+    <label id="servicePathLabel" onclick="copyServicePath()"></label>
+    <textarea id="jsonTextArea" name="jsonTextArea"></textarea>
+    <img src="img/copy-icon.png" id="copyImage" onclick="onCopyImageClick()" width="25" height="25">
+</div>
+
+</body>
+</html>
