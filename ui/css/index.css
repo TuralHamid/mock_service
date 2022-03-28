@@ -85,6 +85,10 @@ label {
     font-weight: bold;
 }
 
+#servicePathLabel{
+    color: #FF0000;
+}
+
 #servicePathLabel:hover {
     cursor: pointer;
     color:#74AC1E;
