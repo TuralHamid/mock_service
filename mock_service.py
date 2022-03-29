@@ -230,7 +230,9 @@ def get_route_list():
 
 def get_routes_as_json():
     routes = []
-    for rt in get_route_list():
+    route_list = get_route_list()
+    route_list.sort()
+    for rt in route_list:
         routes.append({"serviceNameSelect": str(os.path.basename(rt).split(".")[0])})
     return routes
 

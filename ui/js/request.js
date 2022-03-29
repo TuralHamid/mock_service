@@ -76,8 +76,9 @@ function fillServiceNames() {
         if (request.status === 200) {
             var jsonResponse = JSON.parse(request.responseText);
             var serviceNameSelect = document.getElementById("serviceNameSelect");
-            for (var i = 0; i < serviceNameSelect.options.length; i++){
-                serviceNameSelect.remove(i);
+
+            while (serviceNameSelect.options.length > 0) {
+                serviceNameSelect.remove(0);
             }
             for (var i = 0; i < jsonResponse.length; i++){
                 var option = document.createElement("option");
