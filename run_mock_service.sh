@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PYTHON_PATH=$(ls -d /usr/bin/* | grep -Eo "/usr/bin/python3.[0-9]$" | tail -1)
 if [ -z "$PYTHON_PATH" ]
   then
