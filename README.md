@@ -23,3 +23,7 @@
 
 * Run **run_mock_service.sh** file to start server
   * `./run_mock_service.sh`
+
+
+* In order to stop server, run command below
+  * `fuser -k YOUR_PORT_NUMBER/tcp`
