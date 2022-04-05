@@ -21,6 +21,10 @@
   * `chmod u+x run_mock_service.sh`
 
 
+* Change the newline convention type of **run_mock_service.sh** file to the UNIX based type
+  * `dos2unix run_mock_service.sh`
+
+
 * Run **run_mock_service.sh** file to start server
   * `./run_mock_service.sh`
 
