@@ -107,8 +107,8 @@ class BasicServer(BaseHTTPRequestHandler):
                         self.handle_http(STATUS_ERROR, CONTENT_TYPE_TEXT, "\"{}\" service does not exist".format(name))
                 else:
                     self.handle_http(STATUS_ERROR, CONTENT_TYPE_TEXT, "Malformed JSON")
-            else:
-                self.handle_path_request()
+        else:
+            self.handle_path_request()
 
     def handle_path_request(self):
         if self.path.count("/") == 1:
