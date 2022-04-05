@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PYTHON_PATH=$(ls -d /usr/bin/* | grep -Eo "/usr/bin/python3.[0-9]$")
+PYTHON_PATH=$(ls -d /usr/bin/* | grep -Eo "/usr/bin/python3.[0-9]$" | tail -1)
 if [ -z "$PYTHON_PATH" ]
 then
   echo "Proper Python version is not installed. Please install version 3.x"
